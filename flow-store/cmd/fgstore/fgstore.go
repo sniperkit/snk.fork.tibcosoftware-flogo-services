@@ -1,13 +1,20 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package main
 
 import (
 	"encoding/json"
 	"flag"
 	"fmt"
-	"github.com/TIBCOSoftware/flogo-lib/logger"
-	"github.com/TIBCOSoftware/flogo-services/flow-store/flow"
-	"github.com/julienschmidt/httprouter"
 	"net/http"
+
+	"github.com/TIBCOSoftware/flogo-lib/logger"
+	"github.com/julienschmidt/httprouter"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-services/flow-store/flow"
 )
 
 var log = logger.GetLogger("main")

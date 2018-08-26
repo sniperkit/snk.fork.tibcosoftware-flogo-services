@@ -1,9 +1,14 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package flowinstance
 
 import (
 	"strings"
 
-	"github.com/TIBCOSoftware/flogo-services/flow-state/util"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-services/flow-state/util"
 )
 
 type StepInfo struct {

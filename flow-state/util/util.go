@@ -1,9 +1,14 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package util
 
 import (
-	"strings"
-	"strconv"
 	"fmt"
+	"strconv"
+	"strings"
 )
 
 func Contains(s []int64, e int64) bool {
@@ -35,13 +40,13 @@ func StringContains(s []string, e string) bool {
 
 func IsRootTask(taskId interface{}) bool {
 	strId := convertInterfaceToString(taskId)
-	if strId == "1" || strId == "root"{
+	if strId == "1" || strId == "root" {
 		return true
 	}
 	return false
 }
 
-func GetRootId(taskId interface{}) interface{}{
+func GetRootId(taskId interface{}) interface{} {
 	if taskId == nil {
 		panic("Invalid nil taskId found")
 	}
@@ -49,7 +54,7 @@ func GetRootId(taskId interface{}) interface{}{
 	case string:
 		return "root"
 	case float64:
-		return  1
+		return 1
 	default:
 		panic(fmt.Sprintf("Error parsing Task with Id '%v', invalid type '%T'", taskId, taskId))
 	}

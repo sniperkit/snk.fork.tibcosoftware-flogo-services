@@ -1,17 +1,24 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package flow
 
 import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/TIBCOSoftware/flogo-lib/logger"
-	"github.com/TIBCOSoftware/flogo-services/flow-store/persistence"
-	"github.com/julienschmidt/httprouter"
 	"io/ioutil"
 	"net/http"
 	"strconv"
 	"sync/atomic"
 	"time"
+
+	"github.com/TIBCOSoftware/flogo-lib/logger"
+	"github.com/julienschmidt/httprouter"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-services/flow-store/persistence"
 )
 
 var flowId uint64 = 0

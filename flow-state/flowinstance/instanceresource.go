@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package flowinstance
 
 import (
@@ -11,9 +16,10 @@ import (
 	"time"
 
 	"github.com/TIBCOSoftware/flogo-lib/logger"
-	"github.com/TIBCOSoftware/flogo-services/flow-state/persistence"
-	"github.com/TIBCOSoftware/flogo-services/flow-state/util"
 	"github.com/julienschmidt/httprouter"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-services/flow-state/persistence"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-services/flow-state/util"
 )
 
 var log = logger.GetLogger("instance")

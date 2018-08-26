@@ -1,7 +1,13 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package persistence
 
 import (
 	"flag"
+
 	"gopkg.in/redis.v4"
 )
 

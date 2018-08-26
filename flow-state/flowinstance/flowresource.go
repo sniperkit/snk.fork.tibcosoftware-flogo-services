@@ -1,14 +1,20 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package flowinstance
 
 import (
 	"encoding/json"
+	"errors"
 	"fmt"
-	"github.com/TIBCOSoftware/flogo-services/flow-state/persistence"
-	"github.com/julienschmidt/httprouter"
 	"net/http"
 	"strings"
 
-	"errors"
+	"github.com/julienschmidt/httprouter"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-services/flow-state/persistence"
 )
 
 func ListAllFlowStatus(response http.ResponseWriter, request *http.Request, _ httprouter.Params) {
